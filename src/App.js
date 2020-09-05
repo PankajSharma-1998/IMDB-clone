@@ -19,9 +19,7 @@ class App extends Component {
 
   render() {
 
-  if(window.location.pathname === "/IMDB-clone"){
-    window.location.href = window.location.origin;
-  }
+  
 
     return (
       <div> 
@@ -30,7 +28,7 @@ class App extends Component {
  
     <Switch>  
 
-      <Route path="/" exact component={Home} />
+      <Route path="/IMDB-clone" exact component={Home} />
       <Route path="/movies" exact component={ContentMovies} />
       <Route path="/trending" exact component={Trending} />
       <Route path="/popular" exact component={Popular} />

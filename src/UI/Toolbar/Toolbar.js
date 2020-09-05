@@ -12,7 +12,7 @@ const Toolbar = (props) => {
          
          <strong>IMDB</strong>
         
-         <span className="home"><Link to="/" className="links">Home</Link></span> 
+         <span className="home"><Link to="/IMDB-clone" className="links">Home</Link></span> 
         
          <span className="tv-movie">
             Movies
