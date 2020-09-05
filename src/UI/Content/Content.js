@@ -1,10 +1,9 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import axios from 'axios';
 import {  connect } from 'react-redux';
 import {Action} from '../../ReduxStore/Action';
 import './Content.scss';
-import {Link,Redirect,Route} from 'react-router-dom';
-import {render} from 'react-dom';
+import {Link} from 'react-router-dom';
 
 const Content = (props) => {
 

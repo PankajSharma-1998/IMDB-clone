@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import {connect} from 'react-redux';
 import {Action} from '../../ReduxStore/Action';
 import './Header.scss';
-import axios from 'axios';
 import {Link} from 'react-router-dom';
 
 

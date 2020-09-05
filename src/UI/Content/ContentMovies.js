@@ -1,8 +1,7 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
 import {Action} from '../../ReduxStore/Action';
-//import {Link} from 'react-router-dom';
 import './Content.scss';
 
 const ContentMovies = (props) => {
@@ -15,7 +14,7 @@ const ContentMovies = (props) => {
     (async function(){
         
 
-    console.log(props.Searchdata);
+        
     const id= x.id;
     const change_type = x.first_air_date;// to get specification for tvs 
     

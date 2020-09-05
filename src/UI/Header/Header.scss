@@ -11,12 +11,9 @@
    
 }
 
-  
-
-
    input[type="text"]{
       
-    width:90%;
+       width:90%;
        height:50px;
        border-radius:30px 30px 30px 30px;
        border:1px solid gray;
@@ -38,12 +35,12 @@
 
   .input-search i{
 
-    cursor: pointer;
-      font-size: large;
+      cursor: pointer;
+      font-size:xx-large;
       font-weight: bolder;
       color:blue;
       position: absolute;
-      top:238px;
+      top:230px;
       right:13%;
       
 } 
@@ -75,7 +72,7 @@
 
         .input-search i{
         
-        top:184px;
+        top:175px;
         right:10.5%;
   } 
 
@@ -92,7 +89,7 @@
 
         .input-search i{
             
-            top:178px;
+            top:170px;
             right:11%;
     } 
 
@@ -109,7 +106,6 @@
 
         .input-search i{
         
-            height:25px;
             right:12%;        
       } 
 
@@ -129,7 +125,7 @@
             position: relative;
             top:-38px;
             left:85%;
-            font-size:medium;            
+            font-size:x-large;           
       } 
 
     }

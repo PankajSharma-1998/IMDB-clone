@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { createStore,applyMiddleware,combineReducers } from 'redux';
+import { createStore,applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import Reducer from './ReduxStore/Reducer';
 import {BrowserRouter as Router} from 'react-router-dom';
 
-const allReducers=combineReducers({Reducer});
+
 
 const store = createStore(Reducer,applyMiddleware(thunk));
 

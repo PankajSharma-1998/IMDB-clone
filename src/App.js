@@ -19,12 +19,17 @@ class App extends Component {
 
   render() {
 
+  if(window.location.pathname === "/IMDB-clone"){
+    window.location.href = window.location.origin;
+  }
+
     return (
       <div> 
    
    <Toolbar />
  
     <Switch>  
+
       <Route path="/" exact component={Home} />
       <Route path="/movies" exact component={ContentMovies} />
       <Route path="/trending" exact component={Trending} />
@@ -35,6 +40,7 @@ class App extends Component {
       <Route path="/populartv" exact component={PopularTv} />
       <Route path="/search" exact component={Search} />
       <Route path="/about" exact component={About} />
+      
       </Switch>
      <Footer />
 

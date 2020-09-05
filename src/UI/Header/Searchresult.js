@@ -4,7 +4,6 @@ import axios from 'axios';
 import {Action} from '../../ReduxStore/Action';
 import '../Content/Trending/Trending.scss';
 import {Link} from 'react-router-dom';
-import {render} from 'react-dom';
 
 const Search = (props) => {
  
