@@ -1,0 +1,148 @@
+.content{
+
+    padding:0px 1.5% 0px 1.5%;
+    margin:20px 0px 0px 0px;
+
+ .content-heading li{
+ 
+    font-size: medium;
+    display: inline-block;
+    margin:0px 5px 10px 20px;
+ 
+} 
+
+   .content-heading li span{
+
+    cursor: pointer;
+       background:white;
+       padding:10px 10px 10px 10px;
+       border-radius: 10px 10px 10px 10px;
+       border:1px solid #01A7D4;
+   }
+   
+   .content-heading li span:hover{
+
+    cursor: pointer;
+    background:linear-gradient(to right,#034363,#01A7D4 );
+    border:1px solid white;
+}
+
+   .content-1{
+    
+    display:block;
+    cursor: pointer;
+
+
+.content-2{
+    
+    display:flex;
+    flex-direction:row;
+    padding:10px 10px 10px 10px;
+    font-size: small;
+    
+}
+
+.content-2 span mark{
+
+    font-weight: bolder;
+    font-size: large;
+    color:black;
+    padding:1px 1px 1px 1px;
+
+}
+.content-2 span{
+
+    padding:10px 10px 10px 10px;      
+}
+    
+    .content-img{
+     
+        width:20vw;
+        height:30vh;
+        border-radius: 10px 10px 10px 10px;
+        
+    }
+    .content-img:hover{
+      
+        transform: scale(1.1);
+        transition: all 0.5s 0s ease-in-out;
+       
+    }
+
+}
+
+}
+
+@media screen and(max-width:750px){
+    
+    .content{
+
+        .content-1{
+    
+            .content-2{
+    
+                font-size:small;
+            }
+    
+            .content-img{
+    
+                width:30vw;
+                height:40vw;
+    
+            }
+    
+        }
+    
+    }
+}
+
+@media screen and(max-width:650px){
+    
+    .content{
+
+        .content-heading li {
+
+            margin:0px 5px 10px 5px;
+    font-size:small;
+}
+        .content-1{
+          
+            .content-2{
+
+                font-size:smaller;
+            
+            }
+            .content-img{
+
+                width:40vw;
+                height:50vw;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:490px){
+
+    .content{
+
+        .content-heading li {
+
+            margin:0px 5px 10px 5px;
+            font-size:x-small;
+        }
+
+        .content-1{
+          
+            .content-2{
+
+                flex-direction: column;
+            }
+           
+            .content-img{
+
+                width:100%;
+                height:60vw;
+            }
+        }
+    }
+}

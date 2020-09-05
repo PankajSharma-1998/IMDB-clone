@@ -1,0 +1,193 @@
+
+.toolbar{   
+  
+    background-color:#2A3344;
+    box-sizing: border-box;
+    border:1px solid black;
+    padding:15px 0px 15px 0px;
+    display:flex;
+    justify-content:start;
+    flex-flow:wrap;
+    color:white;
+    font-weight: bolder;
+    animation:toolbar 1s 0s 1 alternate;
+
+
+    strong{
+  
+        background:linear-gradient(to right,#034363,#01A7D4 );
+       color:linear-gradient(to right,#034363,#01A7D4 );
+       font-weight: bolder;
+       box-sizing: border-box;
+       padding:10px 10px 10px 10px;
+       margin:0px 10px 0px 10px;
+       animation:logo 2s 2s infinite alternate ease-in;
+    }
+
+    .links{
+
+        color:white;
+        text-decoration: none;
+    }
+
+    .links-1{
+    
+        color:black;
+        text-decoration: none;
+    }
+
+.home,.tv-movie,.about,.contact{
+    
+    cursor: pointer;
+    padding:10px 10px 10px 10px;
+    
+}
+
+ ul{
+    
+    display: none;
+}
+
+
+
+.tv-movie:hover ul{
+    
+    display: block;
+    position: absolute;
+    top:40px;
+    background-color:white;
+    border:none;
+    padding:10px 20px 20px 20px;
+    border-radius:10px 10px 10px 10px;
+    list-style: none;
+    animation:list 1s 0s 1 alternate;
+}
+
+ ul li{
+    
+    padding:10px 10px 10px 10px;
+}
+
+
+}
+
+@media screen and (max-width:520px){
+    
+    .toolbar{
+        
+        strong{
+       
+       padding:10px 5px 10px 5px;
+       margin:0px 5px 0px 5px;
+ 
+ }
+
+        .home,.movie,.tv,.about,.contact{
+
+            padding:10px 5px 10px 5px;
+        }
+    }
+}
+
+
+@media screen and (max-width:390px){
+
+    .toolbar{
+
+        flex-direction: column;
+        padding:0px 0px 0px 0px;
+        text-align: center;
+        font-size:medium;
+       
+        strong, .home.tv-movie,.about,.contact{
+
+            margin:0px 0px 0px 0px;
+            padding:10px 0px 10px 0px;
+    }
+    .tv-movie:hover ul{
+
+        display: block;
+        position: relative;
+        top:0px;
+        width:100%;
+        left:0px;
+        padding:10px 0px 20px 0px;
+        animation:list1 1s 0s 1 alternate;
+      
+    }
+}
+
+}
+
+
+@keyframes list{
+
+0%{
+    
+    transform:translateX(-30px);
+    opacity:0.5;
+    
+}
+
+  100%{
+
+    opacity:1;
+    transform:translateX(0px);
+    
+      
+  }
+   
+}
+
+@keyframes list1{
+
+    0%{
+        
+        transform:translateY(-30px);
+        opacity:0.5;
+        
+    }
+    
+      100%{
+
+        opacity:1; 
+        transform:translateY(0px);
+                  
+      }
+       
+    }
+
+    
+@keyframes toolbar{
+
+    0%{
+        transform:translateY(-50px);
+        opacity:0.5;
+        }
+    
+      100%{
+    
+        opacity:1; 
+        transform:translateY(0px);
+              
+      }
+       
+    }
+
+    @keyframes logo{
+
+        0%{
+        
+            color:white;
+        
+            }
+        
+          100%{
+        
+            color:#01A7D4;
+        
+        }
+   
+        }   
+
+   

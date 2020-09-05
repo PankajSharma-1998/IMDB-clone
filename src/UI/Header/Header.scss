@@ -1,0 +1,188 @@
+.header{
+   
+   background:linear-gradient(to right,#034363,#01A7D4 );
+   color:white;
+   padding:20px 20px 20px 20px;
+
+ 
+   h1{
+    
+    animation:input 1s 0s 1 alternate;
+   
+}
+
+  
+
+
+   input[type="text"]{
+      
+    width:90%;
+       height:50px;
+       border-radius:30px 30px 30px 30px;
+       border:1px solid gray;
+     
+ }
+
+   input[type="text"]::placeholder{
+
+    color:grey;
+      padding:15px;
+    
+   }
+   
+   input[type="text"]:hover{
+       
+       box-shadow:2px 2px 5px grey;
+  
+ }
+
+  .input-search i{
+
+    cursor: pointer;
+      font-size: large;
+      font-weight: bolder;
+      color:blue;
+      position: absolute;
+      top:238px;
+      right:13%;
+      
+} 
+
+}
+
+@media screen and (max-width:950px){
+
+    .header{
+        
+        input[type="text"]{
+            width:95%;
+        }
+
+        .input-search i{
+            right:9%;            
+      } 
+
+    }
+}
+
+@media screen and (max-width:810px){
+    
+    .header{
+
+        h1{
+            font-size:larger;
+        }
+
+        .input-search i{
+        
+        top:184px;
+        right:10.5%;
+  } 
+
+    }
+}
+
+@media screen and (max-width:590px){
+
+    .header{
+
+        h1{
+            font-size:medium;
+        }
+
+        .input-search i{
+            
+            top:178px;
+            right:11%;
+    } 
+
+    }
+}
+
+@media screen and (max-width:510px){
+    
+    .header{
+
+        h1{
+            font-size:medium;
+        }
+
+        .input-search i{
+        
+            height:25px;
+            right:12%;        
+      } 
+
+    }
+}
+@media screen and (max-width:390px){
+    
+    .header{
+  
+        h1{
+            
+            font-size:small;
+        }
+
+        .input-search i{
+          
+            position: relative;
+            top:-38px;
+            left:85%;
+            font-size:medium;            
+      } 
+
+    }
+}
+
+@media screen and (max-width:330px){
+
+    .header{
+
+        h1{
+            
+            font-size:small;
+        }
+
+        input[type="text"]::placeholder{
+            
+            padding:0px;
+         }
+        .input-search i{
+            
+            top:-38px;
+            left:84%;
+            
+} 
+
+    }
+}
+
+
+
+@keyframes input{
+
+    0%{
+        
+
+        transform:translateX(-100px);
+    }
+    100%{
+ 
+        transform:translateX(0px);
+    
+    }
+}
+
+@keyframes input{
+ 
+    0%{
+        
+        transform:translateX(-100px);
+    }
+    100%{
+ 
+        transform:translateX(0px);
+    
+    }
+}
